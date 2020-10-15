@@ -2,15 +2,15 @@ body {
 
     #app {
         nav {
-            color: $bianco-sf;
-            background-color: $white_team;
+            color: black;
+            background-color: #ABC502;
             #container-navbar-principale {
                 display: flex;
                 justify-content: space-between;
             }
             a {
                 text-decoration: none;
-                color: $bianco-sf;
+                color: black;
                 font-size: 1.2rem;
                 font-weight: 500;
             }

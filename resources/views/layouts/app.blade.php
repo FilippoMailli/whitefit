@@ -32,15 +32,7 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-                        <li>
-                            <a href="{{route('index')}}">HOME</a>
-                        </li>
-
-                    </ul>
-                </div>
+                
                 <!-- Center Of Navbar -->
                 <!-- Right Side Of Navbar -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -49,7 +41,13 @@
                         <li>
                             <a href="{{route('contatti')}}">CONTATTI</a>
                         </li>
-                        <div class="dropdown">
+                        <li>
+                            <a href="{{route('whitefit')}}">FITNESS HOUSE</a>
+                        </li>
+                        <li>
+                            <a href="{{route('contatti')}}">FIGHT ACADEMY</a>
+                        </li>
+                        {{-- <div class="dropdown">
                             <a class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             CHI SIAMO
                             </a>
@@ -57,7 +55,7 @@
                                 <a class="dropdown-item" id="item-del-menu" href="{{ROUTE('whitefit')}}">WHITEFIT</a>
                                 <a class="dropdown-item" id="item-del-menu" href="{{ROUTE('whiteteam')}}">WHITETEAM</a>
                             </div>
-                        </div>
+                        </div> --}}
                     </ul>
                 </div>
             </div>
