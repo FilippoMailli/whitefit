@@ -10899,8 +10899,9 @@ a.text-dark:focus {
   }
 }
 
-body {
-  color: #2b2529;
+body #app nav {
+  color: rgba(228, 212, 187, 0.7);
+  background-color: #291d21;
 }
 
 body #app nav #container-navbar-principale {
@@ -10910,22 +10911,28 @@ body #app nav #container-navbar-principale {
 
 body #app nav a {
   text-decoration: none;
-  color: #2b2529;
+  color: rgba(228, 212, 187, 0.7);
   font-size: 1.2rem;
+  font-weight: 500;
+}
+
+body #app nav .dropdown-menu {
+  background-color: #291d21;
 }
 
 body #app nav .dropdown-iteam {
   margin: 0 auto;
+  background-color: #291d21;
 }
 
 body #app nav .dropdown-item:hover {
-  background-color: rgba(1, 1, 1, 0.1);
+  background-color: white;
   color: black;
 }
 
 body #app nav .dropdown-item:active {
-  background-color: rgba(1, 1, 1, 0.8);
-  color: #e4d4bb;
+  background-color: rgba(1, 1, 1, 0.5);
+  color: rgba(228, 212, 187, 0.7);
 }
 
 body #app nav ul li {
@@ -10935,5 +10942,26 @@ body #app nav ul li {
 
 #dropdownMenu2 {
   padding-left: 1rem;
+}
+
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  background: #093f47;
+  background: linear-gradient(to right, #093f47 0%, #8b9295 53%, #edf1f5 100%);
+}
+
+.container-fluid .container,
+.container-sm .container,
+.container-md .container,
+.container-lg .container,
+.container-xl .container {
+  max-width: 100%;
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 

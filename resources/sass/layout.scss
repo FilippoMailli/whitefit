@@ -1,26 +1,33 @@
 body {
-    color: $white_team;
+
     #app {
         nav {
+            color: $bianco-sf;
+            background-color: $white_team;
             #container-navbar-principale {
                 display: flex;
                 justify-content: space-between;
             }
             a {
                 text-decoration: none;
-                color: $white_team;
+                color: $bianco-sf;
                 font-size: 1.2rem;
+                font-weight: 500;
+            }
+            .dropdown-menu {
+                background-color: $white_team;
             }
             .dropdown-iteam {
                 margin: 0 auto;
+                background-color: $white_team;
             }
             .dropdown-item:hover {
-                background-color: rgba(1,1,1,0.1);
+                background-color: white;
                 color: black;
             }
             .dropdown-item:active {
-                background-color: rgba(1,1,1,0.8);
-                color: $white_fit;
+                background-color: rgba(1,1,1,0.5);
+                color: $bianco-sf;
             }
             ul {
                 li {

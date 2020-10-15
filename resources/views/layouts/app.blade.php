@@ -21,7 +21,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md fixed-top navbar-light shadow-sm">
             <div class="container container-flex" id="container-navbar-principale">
                 <div class="">
                     <a class="navbar-brand torna-home" href="{{ url('/') }}">
@@ -63,7 +63,7 @@
             </div>
         </nav>
     </div>
-        <main class="py-4">
+        <main>
             @yield('content')
         </main>
     @yield('script')
