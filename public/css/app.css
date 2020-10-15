@@ -10899,3 +10899,41 @@ a.text-dark:focus {
   }
 }
 
+body {
+  color: #2b2529;
+}
+
+body #app nav #container-navbar-principale {
+  display: flex;
+  justify-content: space-between;
+}
+
+body #app nav a {
+  text-decoration: none;
+  color: #2b2529;
+  font-size: 1.2rem;
+}
+
+body #app nav .dropdown-iteam {
+  margin: 0 auto;
+}
+
+body #app nav .dropdown-item:hover {
+  background-color: rgba(1, 1, 1, 0.1);
+  color: black;
+}
+
+body #app nav .dropdown-item:active {
+  background-color: rgba(1, 1, 1, 0.8);
+  color: #e4d4bb;
+}
+
+body #app nav ul li {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#dropdownMenu2 {
+  padding-left: 1rem;
+}
+

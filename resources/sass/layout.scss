@@ -1,0 +1,40 @@
+body {
+    color: $white_team;
+    #app {
+        nav {
+            #container-navbar-principale {
+                display: flex;
+                justify-content: space-between;
+            }
+            a {
+                text-decoration: none;
+                color: $white_team;
+                font-size: 1.2rem;
+            }
+            .dropdown-iteam {
+                margin: 0 auto;
+            }
+            .dropdown-item:hover {
+                background-color: rgba(1,1,1,0.1);
+                color: black;
+            }
+            .dropdown-item:active {
+                background-color: rgba(1,1,1,0.8);
+                color: $white_fit;
+            }
+            ul {
+                li {
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+               }
+            }
+        }
+    }
+}
+
+
+
+
+#dropdownMenu2 {
+    padding-left: 1rem;
+}
