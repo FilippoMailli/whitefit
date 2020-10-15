@@ -21,7 +21,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md fixed-top navbar-light shadow-sm">
+        <nav class="navbar navbar-expand-md fixed-top navbar-light shadow-sm mb-1">
             <div class="container container-flex" id="container-navbar-principale">
                 <div class="">
                     <a class="navbar-brand torna-home" href="{{ url('/') }}">

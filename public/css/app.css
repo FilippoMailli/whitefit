@@ -10949,6 +10949,7 @@ body #app nav ul li {
 .container-md,
 .container-lg,
 .container-xl {
+  margin-top: 30px;
   background: #093f47;
   background: linear-gradient(to right, #093f47 0%, #8b9295 53%, #edf1f5 100%);
 }
@@ -10963,5 +10964,59 @@ body #app nav ul li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.container-fluid .container-top,
+.container-sm .container-top,
+.container-md .container-top,
+.container-lg .container-top,
+.container-xl .container-top {
+  position: relative;
+}
+
+.container-fluid .container-top .container-testo-top,
+.container-sm .container-top .container-testo-top,
+.container-md .container-top .container-testo-top,
+.container-lg .container-top .container-testo-top,
+.container-xl .container-top .container-testo-top {
+  position: absolute;
+  width: 50%;
+  height: 30%;
+  padding: 200px;
+}
+
+#testata {
+  color: rgba(228, 212, 187, 0.7);
+  text-align: left;
+  font-size: 90px;
+  font-weight: 800;
+}
+
+#testo-testata {
+  text-align: right;
+  color: white;
+  font-size: 30px;
+}
+
+.bottoni-fila {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#btn-whiteteam {
+  width: 140px;
+  height: 60px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgba(228, 212, 187, 0.7);
+  transition: 0.2s;
+  color: black;
+}
+
+#btn-whiteteam:hover {
+  color: white;
 }
 
