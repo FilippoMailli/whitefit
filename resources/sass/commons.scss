@@ -68,22 +68,29 @@ background: linear-gradient(to right, rgba(9,63,71,1) 0%, rgba(139,146,149,1) 53
     font-weight: bold;
     font-size: 20px;
     padding-bottom: 0;
+
 }
 
-#frecciona-div {
+.frecciona-div {
     position: relative;
     bottom: 0;
     color: white;
+    transition: 0.2s;
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-50px);
+        filter: brightness(1) invert(0);
+    }
 }
 
 #immagine-freccione {
     filter: brightness(0) invert(1);
     transition: 0.2s;
-    &:hover {
-        filter: brightness(1) invert(0);
-        cursor: pointer;
-        transform: translateY(-50px);
-    }
+    // &:hover {
+    //     filter: brightness(1) invert(0);
+    //     cursor: pointer;
+    //     transform: translateY(-50px);
+    // }
 }
 
 .divisorio {
@@ -94,8 +101,17 @@ background: linear-gradient(to right, rgba(9,63,71,1) 0%, rgba(139,146,149,1) 53
 
 .container-divisione {
     width: 100%;
-    height: 800px;
+    height: 1000px;
     display: flex;
+    h2 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    h4 {
+        padding-top: 60px;
+        font-size: 16px;
+        font-weight: bolder;
+    }
     .parte-sx{
         width: 100%;
         height: 100%;
@@ -114,6 +130,7 @@ background: linear-gradient(to right, rgba(9,63,71,1) 0%, rgba(139,146,149,1) 53
         .informazioni-logo-sx {
             padding: 50px 0;
         }
+
     }
 
     .parte-dx {
@@ -135,4 +152,149 @@ background: linear-gradient(to right, rgba(9,63,71,1) 0%, rgba(139,146,149,1) 53
             padding: 50px 0;
         }
     }
+}
+
+.divisorio-orari {
+    width: 100%;
+    height: 1200px;
+    display: flex;
+
+}
+.tabella-orari {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .tabellina {
+        height: 80%;
+        width: 80%;
+        margin: auto;
+        background-color: rgba(255,255,255,0.7);
+        transform: translateY(12.5%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+            padding: 50px;
+            text-align: center;
+        }
+        .tabellina-divisa {
+            height: 80%;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 60px;
+        }
+    }
+}
+
+.divisione-in-colonne {
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: column;
+    width: calc(90% / 7);
+}
+
+.spazio-nero {
+    font-size: 16px;
+    font-weight: bolder;
+    width: 100%;
+    height: calc(100%/13);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    line-height: 18px;
+}
+
+.pilates-font {
+    background-color: rgb(197, 113, 111);
+
+}
+
+.gag-font {
+    background-color: rgb(98, 136, 58);
+}
+
+.spazio-bianco {
+    width: 100%;
+    height: calc(100%/11);
+}
+
+.funzionale-font {
+    background-color: rgb(197, 179, 51);
+}
+
+.bjjbaby-font {
+    color: white;
+    background-color: rgb(4, 87, 134);
+}
+
+.step-font {
+    color: white;
+    background-color: rgb(60, 34, 32);
+}
+
+.bruciagrassi-font {
+    color: white;
+    background-color: rgb(195, 113, 110);
+}
+
+.kickk1-font {
+    background-color: rgb(188, 94, 34);
+}
+
+.fusion-font {
+    background-color: rgb(77, 125, 73);
+}
+
+.giorni-settimana {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    span {
+        font-size: 30px;
+        font-weight: bolder;
+        width: calc(90% / 7);
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+#altezza-incremento {
+    height: 800px;
+}
+
+.divisorio-contatti {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bolder;
+}
+.contatti-sx {
+    width: 50%;
+    height: 80%;
+    background-color: black;
+}
+
+.contatti-dx {
+    width: 50%;
+    height: 80%;
+    background-color: black;
 }

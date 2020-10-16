@@ -11026,21 +11026,22 @@ body #app nav ul li {
   padding-bottom: 0;
 }
 
-#frecciona-div {
+.frecciona-div {
   position: relative;
   bottom: 0;
   color: white;
+  transition: 0.2s;
+}
+
+.frecciona-div:hover {
+  cursor: pointer;
+  transform: translateY(-50px);
+  filter: brightness(1) invert(0);
 }
 
 #immagine-freccione {
   filter: brightness(0) invert(1);
   transition: 0.2s;
-}
-
-#immagine-freccione:hover {
-  filter: brightness(1) invert(0);
-  cursor: pointer;
-  transform: translateY(-50px);
 }
 
 .divisorio {
@@ -11051,8 +11052,19 @@ body #app nav ul li {
 
 .container-divisione {
   width: 100%;
-  height: 800px;
+  height: 1000px;
   display: flex;
+}
+
+.container-divisione h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.container-divisione h4 {
+  padding-top: 60px;
+  font-size: 16px;
+  font-weight: bolder;
 }
 
 .container-divisione .parte-sx {
@@ -11099,5 +11111,154 @@ body #app nav ul li {
 
 .container-divisione .parte-dx .informazioni-logo-dx {
   padding: 50px 0;
+}
+
+.divisorio-orari {
+  width: 100%;
+  height: 1200px;
+  display: flex;
+}
+
+.tabella-orari {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tabella-orari .tabellina {
+  height: 80%;
+  width: 80%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  transform: translateY(12.5%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.tabella-orari .tabellina h1 {
+  font-size: 60px;
+  font-weight: bold;
+  padding: 50px;
+  text-align: center;
+}
+
+.tabella-orari .tabellina .tabellina-divisa {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.divisione-in-colonne {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
+  width: calc(90% / 7);
+}
+
+.spazio-nero {
+  font-size: 16px;
+  font-weight: bolder;
+  width: 100%;
+  height: calc(100%/13);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  line-height: 18px;
+}
+
+.pilates-font {
+  background-color: #c5716f;
+}
+
+.gag-font {
+  background-color: #62883a;
+}
+
+.spazio-bianco {
+  width: 100%;
+  height: calc(100%/11);
+}
+
+.funzionale-font {
+  background-color: #c5b333;
+}
+
+.bjjbaby-font {
+  color: white;
+  background-color: #045786;
+}
+
+.step-font {
+  color: white;
+  background-color: #3c2220;
+}
+
+.bruciagrassi-font {
+  color: white;
+  background-color: #c3716e;
+}
+
+.kickk1-font {
+  background-color: #bc5e22;
+}
+
+.fusion-font {
+  background-color: #4d7d49;
+}
+
+.giorni-settimana {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.giorni-settimana span {
+  font-size: 30px;
+  font-weight: bolder;
+  width: calc(90% / 7);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#altezza-incremento {
+  height: 800px;
+}
+
+.divisorio-contatti {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bolder;
+}
+
+.contatti-sx {
+  width: 50%;
+  height: 80%;
+  background-color: black;
+}
+
+.contatti-dx {
+  width: 50%;
+  height: 80%;
+  background-color: black;
 }
 
