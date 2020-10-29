@@ -31,9 +31,7 @@
             });
           }
           </script>
-    {{-- <script defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3UjhjGJl-XGW6uWohIAeQtAnxIzTprdg&callback=initMap">
-</script> --}}
+    
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
