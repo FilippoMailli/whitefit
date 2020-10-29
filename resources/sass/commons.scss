@@ -212,7 +212,6 @@ background: linear-gradient(to right, rgba(9,63,71,1) 0%, rgba(139,146,149,1) 53
     justify-content: center;
     flex-direction: column;
     background-color: white;
-    border-radius: 5px;
     line-height: 18px;
 }
 
@@ -227,14 +226,41 @@ background: linear-gradient(to right, rgba(9,63,71,1) 0%, rgba(139,146,149,1) 53
 
 .spazio-bianco {
     width: 100%;
-    height: calc(100%/11);
+    height: calc(100%/13);
+}
+
+.doppio-spazio {
+    height: calc((100%/13)*3);
+    font-size: 16px;
+    font-weight: bolder;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    line-height: 18px;
+    border: 1px solid black;
+}
+
+.kickfit-font {
+    background-color: rgb(208, 203, 190);
+}
+
+.krav-font {
+    background-color: rgb(200, 173, 138);
+}
+
+.totalbody-font {
+    background-color: red;
+    color: white;
 }
 
 .funzionale-font {
     background-color: rgb(197, 179, 51);
 }
 
-.bjjbaby-font {
+.bjjbaby-font, .brasilian-font {
     color: white;
     background-color: rgb(4, 87, 134);
 }
@@ -246,7 +272,7 @@ background: linear-gradient(to right, rgba(9,63,71,1) 0%, rgba(139,146,149,1) 53
 
 .bruciagrassi-font {
     color: white;
-    background-color: rgb(195, 113, 110);
+    background-color: rgb(26, 54, 38);
 }
 
 .kickk1-font {
@@ -257,6 +283,8 @@ background: linear-gradient(to right, rgba(9,63,71,1) 0%, rgba(139,146,149,1) 53
     background-color: rgb(77, 125, 73);
 }
 
+
+
 .giorni-settimana {
     width: 90%;
     margin: 0 auto;
@@ -265,7 +293,7 @@ background: linear-gradient(to right, rgba(9,63,71,1) 0%, rgba(139,146,149,1) 53
     justify-content: space-between;
     border-bottom: 1px solid black;
     span {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: bolder;
         width: calc(90% / 7);
         text-transform: uppercase;
@@ -286,15 +314,58 @@ background: linear-gradient(to right, rgba(9,63,71,1) 0%, rgba(139,146,149,1) 53
     justify-content: center;
     color: white;
     font-weight: bolder;
+    background-color: #ABC502;
+    color: #757575;
 }
 .contatti-sx {
     width: 50%;
     height: 80%;
-    background-color: black;
+    background-color: #E0E0E0;
+    padding: 50px;
 }
 
 .contatti-dx {
     width: 50%;
     height: 80%;
-    background-color: black;
+    background-color: #E0E0E0;
+    padding: 50px;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+.contatti-specs {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.form-email-invio {
+
+}
+
+.contatti-info {
+    font-size: 20px;
+}
+
+#icone-fontawesome-contatti {
+    font-size: 40px;
+    padding-right: 20px;
+}
+
+#mappa-google {
+    height: 100%;
+    width: 100%;
+}
+
+.mappa-immagine {
+    width: 100%;
+    height: 100%;
+    &:hover {
+        opacity: 0.8;   
+    }
 }

@@ -25,4 +25,5 @@ Route::namespace('App\Http\Controllers\Guest')
     Route::get('/contatti', 'HomeController@contatti')->name('contatti');
     Route::get('/whitefit', 'HomeController@whitefit')->name('whitefit');
     Route::get('/whiteteam', 'HomeController@whiteteam')->name('whiteteam');
+    Route::post('/sendemail/send', 'HomeController@send');
 });

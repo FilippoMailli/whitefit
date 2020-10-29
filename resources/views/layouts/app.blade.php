@@ -10,6 +10,30 @@
     <title>{{ config('app.name', 'WhiteFit') }}</title>
 
     <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/6619c90159.js" crossorigin="anonymous"></script>
+    <script>
+
+
+    // Initialize and add the map
+          function initMap() {
+            // The location of Uluru
+            const uluru = { lat: 45.428262, lng: 10.758799 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+              zoom: 17,
+              center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+              position: uluru,
+              map: map,
+            });
+          }
+          </script>
+    {{-- <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3UjhjGJl-XGW6uWohIAeQtAnxIzTprdg&callback=initMap">
+</script> --}}
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
@@ -32,7 +56,7 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
+
                 <!-- Center Of Navbar -->
                 <!-- Right Side Of Navbar -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
